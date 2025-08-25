@@ -1,5 +1,6 @@
 function Cards(){
     return (
+        
               <div className="flex flex-col rounded-xl  p-4"
         style={{
           border: '0.88px solid',
