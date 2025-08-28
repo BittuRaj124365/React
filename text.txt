@@ -10,3 +10,26 @@ Props:-Props are nothing but the information that we pass to a jsx tag in anothe
 for connecting css file from folder import '../ComponentStyles/product.css';
 
 for version 3 of tailwindcss/postcss:- npm install -D tailwindcss@3 postcss autoprefixer
+
+tailwind.config.js:- /** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+postcss.config.js:-export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
+
+for index.css:- @tailwind base;
+@tailwind components;
+@tailwind utilities;
