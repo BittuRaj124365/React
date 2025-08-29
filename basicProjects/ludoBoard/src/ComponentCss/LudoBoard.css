@@ -1,0 +1,11 @@
+button{
+    /* color:rgb(0, 0, 0); */
+    font-weight: bolder;
+    /* background-color: rgb(22, 201, 213); */
+    border-radius: 4px;
+    border:2px solid cyan;
+    cursor:pointer;
+}
+/* p{
+    color:magenta;
+} */
