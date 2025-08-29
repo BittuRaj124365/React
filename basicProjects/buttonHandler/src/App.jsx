@@ -5,12 +5,14 @@ import './App.css'
 import Button from './Components/button'
 import Form from './Components/Form'
 import Counter from './Components/CountButton'
+import LikeButton from './Components/LikeButton'
 function App() {
   return (
     <>
       <Button/>
       <Form/>
       <Counter/>
+      <LikeButton/>
     </>
   )
 }
