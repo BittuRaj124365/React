@@ -35,3 +35,8 @@ postcss.config.js:-export default {
 for index.css:- @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+Note:- if we want to execute any function by own then use callback function and avoid direct function.
+
+  1.) whenever we wants to delete something in React, use 'filter' method.
+  2.) And if we need to render or get elements of arrey for list, use 'map' method
