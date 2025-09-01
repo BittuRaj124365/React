@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 export default function TodoList() {
-  const [todo, setTodo] = useState([{ task: <h3>Todo's</h3>, id: uuidv4() }]);
+  const [todo, setTodo] = useState([
+    { task: <h3>Todo's</h3>, id: uuidv4(), isDone: false },
+  ]);
   let [newTodo, setNewTodo] = useState("");
   let addNewTodo = () => {
     // console.log("New toDo added.");
     setTodo((preTodo) => {
-      return [...preTodo, { task: newTodo, id: uuidv4() }];
+     return [...preTodo, { task: newTodo, id: uuidv4(),isdone:false}];
     });
     setNewTodo(""); //to make the input box empty after adding
   };
@@ -19,23 +21,44 @@ export default function TodoList() {
     setTodo((preTodo) => todo.filter((preTodo) => preTodo.id != id));
     // console.log(id);
   };
-  let upperCaseAll = () => {
-    setTodo(
-      todo.map((todo) => {
-        return {
-          ...todo,
-          task: todo.task.toUpperCase(),
-        };
-      })
-    );
-  };
-  let upperCaseOne = (id) => {
+
+            // make all todo to uppercase
+//   let upperCaseAll = () => {
+//     setTodo(
+//       todo.map((todo) => {
+//         return {
+//           ...todo,
+//           task: todo.task.toUpperCase(),
+//         };
+//       })
+//     );
+//   };
+
+        // to make individual todo in uppercase
+//   let upperCaseOne = (id) => {
+//     setTodo((todo) =>
+//       todo.map((todo) => {
+//         if (todo.id == id) {
+//           return { 
+//             ...todo,
+//             task: todo.task.toUpperCase(),
+//           };
+//         } else {
+//           return todo;
+//         }
+//       })
+//     );
+//   };
+
+  // for mark as done
+  let markAsDone = (id) => {
+    // console.log("mark as done.");
     setTodo((todo) =>
       todo.map((todo) => {
         if (todo.id == id) {
           return {
             ...todo,
-            task: todo.task.toUpperCase(),
+            isDone:true,
           };
         } else {
           return todo;
@@ -43,6 +66,17 @@ export default function TodoList() {
       })
     );
   };
+  // for mark all as done
+  let markAllAsDone=()=>{
+    setTodo(
+      todo.map((todo) => {
+        return {
+          ...todo,
+          isDone:true,
+        };
+      })
+    );
+  }
   return (
     <div>
       <h2>toDo list</h2>
@@ -59,7 +93,10 @@ export default function TodoList() {
       <ul>
         {todo.map((todo) => (
           <li key={todo.id}>
-            <span> {todo.task}</span>
+            <span style={todo.isDone ? { textDecorationLine: "line-through" } : {}}>
+              
+              {todo.task}
+            </span>
             &nbsp; &nbsp;&nbsp;
             <button
               onClick={() => {
@@ -68,13 +105,15 @@ export default function TodoList() {
             >
               Delete
             </button>
-            <button onClick={() => upperCaseOne(todo.id)}>UpperCaseOne</button>
+            {/* <button onClick={() => upperCaseOne(todo.id)}>UpperCaseOne</button> */}
+            <button onClick={() => markAsDone(todo.id)}>Mark as done</button>
           </li>
         ))}
       </ul>
       <br />
       <br />
-      <button onClick={upperCaseAll}>UpperCase</button>
+      {/* <button onClick={upperCaseAll}>UpperCase</button> */}
+      <button onClick={markAllAsDone}>Mark all as done</button>
     </div>
   );
 }
