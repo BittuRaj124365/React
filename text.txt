@@ -5,6 +5,8 @@
 05:15
 05:32
 06:22
+06:31
+06:55
 Key points:- reconcillation is the technique which used to compare the difference between two 'Virtual DOM' means one dom of react and another dom of browser.
 
 Props:-Props are nothing but the information that we pass to a jsx tag in another words its a property of compoments.
@@ -44,3 +46,5 @@ Note:- if we want to execute any function by own then use callback function and 
 React router dom installation:- install react-router-dom
 
 Note:- In react, we dont use "a-tag" for image because, it reload the page so instead of this, we use Link tag.
+
+Note:- In react, there is a dependency that is 'react-router-dom' which gives a method 'Outlet' through which we can set our outlet for page, like if we want to fix some components of page then we can use outlet method. Use chat gpt for more or also you can check Layout.jsx file of reactRouter project.

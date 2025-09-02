@@ -3,13 +3,16 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Components/Header/Header.jsx'
+import Footer from './Components/Footer/Footer.jsx'
+import Home from './Components/Home/Home.jsx'
 
 function App() {
 
   return (
     <>
-      <h1 className='text-red-500 p-4'>react routing</h1>
-      <Header/>
+      {/* <Header/>
+      <Home/>
+      <Footer/> */}
     </>
   ) 
 }
