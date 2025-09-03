@@ -7,6 +7,7 @@
 06:22
 06:31
 06:55
+07:20
 Key points:- reconcillation is the technique which used to compare the difference between two 'Virtual DOM' means one dom of react and another dom of browser.
 
 Props:-Props are nothing but the information that we pass to a jsx tag in another words its a property of compoments.
