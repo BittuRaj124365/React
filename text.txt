@@ -8,6 +8,7 @@
 06:31
 06:55
 07:20
+08:01
 Key points:- reconcillation is the technique which used to compare the difference between two 'Virtual DOM' means one dom of react and another dom of browser.
 
 Props:-Props are nothing but the information that we pass to a jsx tag in another words its a property of compoments.
@@ -15,6 +16,7 @@ Props:-Props are nothing but the information that we pass to a jsx tag in anothe
 for connecting css file from folder import '../ComponentStyles/product.css';
 
 for version 3 of tailwindcss/postcss:- npm install -D tailwindcss@3 postcss autoprefixer
+and then, npx tailwindcss init -p
 
 tailwind.config.js:- /** @type {import('tailwindcss').Config} */
 export default {
