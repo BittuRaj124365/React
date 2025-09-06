@@ -51,3 +51,9 @@ React router dom installation:- install react-router-dom
 Note:- In react, we dont use "a-tag" for image because, it reload the page so instead of this, we use Link tag.
 
 Note:- In react, there is a dependency that is 'react-router-dom' which gives a method 'Outlet' through which we can set our outlet for page, like if we want to fix some components of page then we can use outlet method. Use chat gpt for more or also you can check Layout.jsx file of reactRouter project.
+
+Context Api:- Basically, in one line, the context api is used to share the data globally, without even props
+
+Important Note:- In themeChanger project make sure to add 'darkMode: "class"' in tailwind.config.js
+
+Note:- Handling multiple useState. So, if you have 1 or 2 input or something whose value you wants to update so you can use individual useState for each. But if required multiple useState so for this we will make a single useState for handling all the useStates by passing an object,{} and inside object we can simply pass the useStates variables. (see the Form.jsx of 'Form' project)..
