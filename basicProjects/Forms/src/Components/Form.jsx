@@ -13,7 +13,8 @@ export default function Form() {
     // let fieldInput=event.target.name;
     // setFormData(fieldInput)
     let fieldInput=event.target.value;
-    console.log(fieldInput);
+    setFormData(fieldInput);
+    // console.log(fieldInput);
   }
   return (
     <form>
