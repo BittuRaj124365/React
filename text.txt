@@ -59,3 +59,4 @@ Context Api:- Basically, in one line, the context api is used to share the data 
 Important Note:- In themeChanger project make sure to add 'darkMode: "class"' in tailwind.config.js
 
 Note:- Handling multiple useState. So, if you have 1 or 2 input or something whose value you wants to update so you can use individual useState for each. But if required multiple useState so for this we will make a single useState for handling all the useStates by passing an object,{} and inside object we can simply pass the useStates variables. (see the Form.jsx of 'Form' project)..
+
