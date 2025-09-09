@@ -2,12 +2,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
+import SearchBox from './Components/SearchBox'
+import InfoBox from './Components/InfoBox'
+import WeatherApp from './Components/WeatherApp'
 function App() {
 
   return (
     <>
-      <h1>mini project</h1>
+      <WeatherApp/>
     </>
   )
 }
