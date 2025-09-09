@@ -35,13 +35,15 @@ export default function SearchBox({ updateInfo }) {
     setCity(e.target.value);
   };
   let handleSubmit = async (e) => {
+    e.preventDefault();
     try {
-      e.preventDefault();
       // setCity(city);
       console.log(city);
       setCity("");
       let newInfo = await getWeatherInfo();
+      setError(false); 
       updateInfo(newInfo);
+      setCity("");
     } catch (error) {
       setError(true);
     }
@@ -62,7 +64,7 @@ export default function SearchBox({ updateInfo }) {
         <Button variant="contained" type="submit">
           Search
         </Button>
-        {error && <p style={{color:"red"}}>No such place exist in our API !</p> } 
+        {error && <p style={{color:"red"}}>No such place exist in our API ! </p> } 
       </form>
     </div>
   );
