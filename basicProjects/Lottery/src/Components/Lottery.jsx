@@ -5,7 +5,7 @@ import { generateTicket, sumOfArr } from '../Helper';
 export default function Lottery(){
     const [ticket,setTicket]=useState(generateTicket(3));
     let isWin=sumOfArr(ticket) === 15;
-    // 3 is the parameter for 3 no in ticket.
+    // 3 is the parameter for 3 no's in ticket.
 
     let newTicket=()=>{
         setTicket(generateTicket(3));

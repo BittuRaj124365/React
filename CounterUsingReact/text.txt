@@ -1,3 +1,0 @@
-2:55
-03:07
-Key points:- reconcillation is the technique which used to compare the difference between two 'Virtual DOM' means one dom of react and another dom of browser.

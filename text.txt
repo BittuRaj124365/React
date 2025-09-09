@@ -1,14 +1,20 @@
-02:55
-03:07
-03:20
-03:30
-05:15
-05:32
-06:22
-06:31
-06:55
-07:20
-08:01
+Part-01=>{
+  02:55
+  03:07
+  03:20
+  03:30
+  05:15
+  05:32
+  06:22
+  06:31
+  06:55
+  07:20
+  08:01
+}
+Part-02=>{
+  47:57
+  
+}
 Key points:- reconcillation is the technique which used to compare the difference between two 'Virtual DOM' means one dom of react and another dom of browser.
 
 Props:-Props are nothing but the information that we pass to a jsx tag in another words its a property of compoments.
