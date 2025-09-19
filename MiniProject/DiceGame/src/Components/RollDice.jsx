@@ -1,14 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
-export default function RollDice() {
-  const [currentDice, setCurrentDice] = useState(1);
-  const generateRandomNumber = (min, max) => {
-    return Math.floor(Math.random() * (max - min) + min);
-  };
-  const rollDice = () => {
-    let randomNumber = generateRandomNumber(1, 7);
-    setCurrentDice((prev) => randomNumber);
-  };
+export default function RollDice({currentDice,rollDice}) {
+ 
   return (
     <DiceContainer>
       <div className="dice" onClick={rollDice}>

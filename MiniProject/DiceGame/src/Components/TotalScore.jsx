@@ -10,11 +10,11 @@ const ScoreContainer = styled.div`
     font-size: 24px;
     font-weight: 500;
   }
-`;
-export default function TotalScore() {
+`; 
+export default function TotalScore({score}) {
   return (
     <ScoreContainer>
-      <h1>0</h1>
+      <h1>{score}</h1>
       <p>Total Score</p>
     </ScoreContainer>
   );
