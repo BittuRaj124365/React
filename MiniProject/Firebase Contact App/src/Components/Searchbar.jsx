@@ -1,12 +1,13 @@
 import { CiSearch } from "react-icons/ci";
 import { BsPlusCircle } from "react-icons/bs";
-export default function Searchbar({isOpen}) {
+export default function Searchbar({isOpen,filteredContacts}) {
   return (
     <>
       <div className="flex relative gap-2">
         <CiSearch 
         className="item-center absolute text-3xl text-black left-1 mt-1.5 " />
         <input
+          onChange={filteredContacts}
           type="text"
           placeholder="search contact"
           className="flex-grow h-10 pl-9 border-white rounded-md "
