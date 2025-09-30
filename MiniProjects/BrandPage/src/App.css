@@ -1,0 +1,25 @@
+*{
+    margin:0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin:0 auto;
+    height:72px;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap:24px;
+}
+button{
+    all:unset;
+    padding:6px 16px;
+    background-color: red;
+    height: 32px;
+    color:white;
+    font-weight: 500;
+    border-radius: 3px;
+}
