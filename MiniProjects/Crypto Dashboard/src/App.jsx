@@ -1,8 +1,8 @@
-import Sidenav from "./Component/Sidenav";
+import Dashboard from "./Pages/Dashboard/Dashboard";    
 function App() {
   return (
     <>
-      <Sidenav/>
+      <Dashboard/>
     </>
   );
 }
