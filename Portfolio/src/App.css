@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(106, 128, 128);
+}
+
+/* In your main CSS file (e.g., src/index.css) */
+
+body {
+  /* This line applies the font globally.
+    "Roboto Condensed" is the name from Google Fonts.
+    'sans-serif' is a crucial fallback font.
+  */
+  font-family: "Roboto Condensed", sans-serif;
+  
+  /* You can set a standard weight for all body text here (e.g., 400 for regular) */
+  font-weight: 400; 
+  
+  /* Optional: Set a base font size for the whole page */
+  font-size: 16px; 
+}
+
+/* You can still override the font for specific elements like headings (h1, h2, etc.)
+  if you want them to be thicker or thinner.
+*/
+h1 {
+  font-weight: 700; /* Bold */
+}
