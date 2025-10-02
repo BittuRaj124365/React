@@ -19,7 +19,7 @@ export default function Sidenav() {
     <>
       <Stack
         justify="space-between"
-        boxShadow="sm"
+        boxShadow="lg"
         maxW="13rem"
         h="100vh"
         bg="azure"
@@ -57,7 +57,7 @@ export default function Sidenav() {
             ))}
           </Box>
 
-          <Box mt="4" mx="1">
+          <Box mt="4" mx="1" mb="6">
             <HStack
               marginLeft="3"
               py="3"
